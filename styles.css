@@ -1,7 +1,51 @@
 /* Form UI */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 400px;
+  height: auto;
+  border: 1px solid #010409;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0px #010409;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input {
+  border: 2px solid #010409;
+  padding: 3px 2px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:focus {
+  box-shadow: 2px 2px 0px #010409;
+}
+
+button {
+  margin: 15px 10px;
+  border: 2px solid #010409;
+  padding: 6px 4px;
+}
+
+button:hover {
+  box-shadow: 4px 4px 0px #010409;
+  transform: translate(-2px, -2px);
 }
