@@ -22,6 +22,42 @@ body {
   box-shadow: 8px 8px 0px #010409;
 }
 
+.error-box {
+  border: 2px solid #e74c3c;
+  padding: 12px;
+  margin-bottom: 20px;
+  display: none;
+  border-radius: 8px;
+  background-color: #ffe6e6;
+}
+
+.error-box.show {
+  display: block;
+}
+
+/* ERROR styling - Red */
+.error-box.error {
+  background-color: #ffe6e6;
+  border: 2px solid #e74c3c;
+}
+
+/* SUCCESS styling - Green */
+.error-box.success {
+  background-color: #e8f5e9;
+  border: 2px solid #27ae60;
+}
+
+#error-message {
+  color: #e74c3c;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Success message text - Green */
+.error-box.success #error-message {
+  color: #27ae60;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -39,6 +75,26 @@ input:focus {
   box-shadow: 2px 2px 0px #010409;
 }
 
+input:invalid {
+  border: 2px solid #e74c3c;
+  background-color: #ffe6e6;
+  box-shadow: 2px 2px 0px #e74c3c;
+}
+
+input:invalid:focus {
+  box-shadow: 4px 4px 0px #e74c3c;
+}
+
+input:valid {
+  border: 2px solid #27ae60;
+  background-color: #e8f5e9;
+  box-shadow: 2px 2px 0px #27ae60;
+}
+
+input:valid:focus {
+  box-shadow: 4px 4px 0px #27ae60;
+}
+
 button {
   margin: 15px 10px;
   border: 2px solid #010409;
@@ -49,3 +105,5 @@ button:hover {
   box-shadow: 4px 4px 0px #010409;
   transform: translate(-2px, -2px);
 }
+
+
